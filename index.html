@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Ti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at bottom, #0a0a1a, #04040a);
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        /* ================= ESTRELLAS ================= */
+        .stars, .stars::after {
+            position: fixed;
+            inset: 0;
+            background-image:
+                radial-gradient(1px 1px at 2% 5%, white, transparent),
+                radial-gradient(0.8px 0.8px at 4% 12%, white, transparent),
+                radial-gradient(1.2px 1.2px at 6% 8%, white, transparent),
+                radial-gradient(0.7px 0.7px at 8% 15%, white, transparent),
+                radial-gradient(1.5px 1.5px at 10% 22%, white, transparent),
+                radial-gradient(0.9px 0.9px at 12% 3%, white, transparent),
+                radial-gradient(1.1px 1.1px at 14% 18%, white, transparent),
+                radial-gradient(1.3px 1.3px at 16% 25%, white, transparent),
+                radial-gradient(0.8px 0.8px at 18% 10%, white, transparent),
+                radial-gradient(1px 1px at 20% 30%, white, transparent),
+                radial-gradient(1.2px 1.2px at 22% 7%, white, transparent),
+                radial-gradient(0.7px 0.7px at 24% 35%, white, transparent),
+                radial-gradient(1.4px 1.4px at 26% 14%, white, transparent),
+                radial-gradient(1px 1px at 28% 40%, white, transparent),
+                radial-gradient(1.1px 1.1px at 30% 20%, white, transparent),
+                radial-gradient(0.9px 0.9px at 32% 45%, white, transparent),
+                radial-gradient(1.3px 1.3px at 34% 10%, white, transparent),
+                radial-gradient(0.8px 0.8px at 36% 50%, white, transparent),
+                radial-gradient(1.2px 1.2px at 38% 28%, white, transparent),
+                radial-gradient(1px 1px at 40% 5%, white, transparent),
+                radial-gradient(1.4px 1.4px at 42% 55%, white, transparent),
+                radial-gradient(0.7px 0.7px at 44% 18%, white, transparent),
+                radial-gradient(1.1px 1.1px at 46% 60%, white, transparent),
+                radial-gradient(0.9px 0.9px at 48% 12%, white, transparent),
+                radial-gradient(1.5px 1.5px at 50% 35%, white, transparent),
+                radial-gradient(1px 1px at 52% 25%, white, transparent),
+                radial-gradient(1.2px 1.2px at 54% 65%, white, transparent),
+                radial-gradient(0.8px 0.8px at 56% 8%, white, transparent),
+                radial-gradient(1.3px 1.3px at 58% 45%, white, transparent),
+                radial-gradient(1.1px 1.1px at 60% 15%, white, transparent),
+                radial-gradient(0.9px 0.9px at 62% 70%, white, transparent),
+                radial-gradient(1.4px 1.4px at 64% 22%, white, transparent),
+                radial-gradient(1px 1px at 66% 38%, white, transparent),
+                radial-gradient(1.2px 1.2px at 68% 3%, white, transparent),
+                radial-gradient(0.7px 0.7px at 70% 50%, white, transparent),
+                radial-gradient(1.5px 1.5px at 72% 28%, white, transparent),
+                radial-gradient(0.8px 0.8px at 74% 75%, white, transparent),
+                radial-gradient(1.1px 1.1px at 76% 12%, white, transparent),
+                radial-gradient(1.3px 1.3px at 78% 55%, white, transparent),
+                radial-gradient(1px 1px at 80% 18%, white, transparent),
+                radial-gradient(0.9px 0.9px at 82% 42%, white, transparent),
+                radial-gradient(1.2px 1.2px at 84% 8%, white, transparent),
+                radial-gradient(1.4px 1.4px at 86% 65%, white, transparent),
+                radial-gradient(0.8px 0.8px at 88% 30%, white, transparent),
+                radial-gradient(1px 1px at 90% 38%, white, transparent),
+                radial-gradient(1.1px 1.1px at 92% 10%, white, transparent),
+                radial-gradient(0.7px 0.7px at 94% 70%, white, transparent),
+                radial-gradient(1.5px 1.5px at 96% 22%, white, transparent),
+                radial-gradient(1.3px 1.3px at 98% 50%, white, transparent),
+                radial-gradient(0.9px 0.9px at 1% 60%, white, transparent),
+                radial-gradient(1.2px 1.2px at 3% 35%, white, transparent),
+                radial-gradient(1px 1px at 5% 75%, white, transparent),
+                radial-gradient(1.4px 1.4px at 7% 42%, white, transparent),
+                radial-gradient(0.8px 0.8px at 9% 88%, white, transparent),
+                radial-gradient(1.1px 1.1px at 11% 52%, white, transparent),
+                radial-gradient(1.3px 1.3px at 13% 65%, white, transparent),
+                radial-gradient(0.7px 0.7px at 15% 78%, white, transparent),
+                radial-gradient(1.2px 1.2px at 17% 32%, white, transparent),
+                radial-gradient(1px 1px at 19% 55%, white, transparent),
+                radial-gradient(1.5px 1.5px at 21% 15%, white, transparent),
+                radial-gradient(0.9px 0.9px at 23% 68%, white, transparent),
+                radial-gradient(1.4px 1.4px at 25% 42%, white, transparent),
+                radial-gradient(1.1px 1.1px at 27% 88%, white, transparent),
+                radial-gradient(0.8px 0.8px at 29% 20%, white, transparent),
+                radial-gradient(1.3px 1.3px at 31% 62%, white, transparent),
+                radial-gradient(1.2px 1.2px at 33% 35%, white, transparent),
+                radial-gradient(1px 1px at 35% 92%, white, transparent),
+                radial-gradient(0.7px 0.7px at 37% 15%, white, transparent),
+                radial-gradient(1.4px 1.4px at 39% 75%, white, transparent),
+                radial-gradient(1.1px 1.1px at 41% 28%, white, transparent),
+                radial-gradient(0.9px 0.9px at 43% 52%, white, transparent),
+                radial-gradient(1.5px 1.5px at 45% 8%, white, transparent),
+                radial-gradient(1.2px 1.2px at 47% 70%, white, transparent),
+                radial-gradient(0.8px 0.8px at 49% 38%, white, transparent),
+                radial-gradient(1.3px 1.3px at 51% 82%, white, transparent),
+                radial-gradient(1px 1px at 53% 18%, white, transparent),
+                radial-gradient(1.1px 1.1px at 55% 48%, white, transparent),
+                radial-gradient(0.7px 0.7px at 57% 62%, white, transparent),
+                radial-gradient(1.4px 1.4px at 59% 12%, white, transparent),
+                radial-gradient(1.2px 1.2px at 61% 78%, white, transparent),
+                radial-gradient(0.9px 0.9px at 63% 32%, white, transparent),
+                radial-gradient(1.5px 1.5px at 65% 58%, white, transparent),
+                radial-gradient(1px 1px at 67% 5%, white, transparent),
+                radial-gradient(1.1px 1.1px at 69% 88%, white, transparent),
+                radial-gradient(0.8px 0.8px at 71% 25%, white, transparent),
+                radial-gradient(1.3px 1.3px at 73% 52%, white, transparent),
+                radial-gradient(1.2px 1.2px at 75% 68%, white, transparent),
+                radial-gradient(0.7px 0.7px at 77% 18%, white, transparent),
+                radial-gradient(1.4px 1.4px at 79% 35%, white, transparent),
+                radial-gradient(0.9px 0.9px at 81% 78%, white, transparent),
+                radial-gradient(1.5px 1.5px at 83% 42%, white, transparent),
+                radial-gradient(1px 1px at 85% 12%, white, transparent),
+                radial-gradient(1.1px 1.1px at 87% 62%, white, transparent),
+                radial-gradient(0.8px 0.8px at 89% 88%, white, transparent),
+                radial-gradient(1.3px 1.3px at 91% 22%, white, transparent),
+                radial-gradient(1.2px 1.2px at 93% 45%, white, transparent),
+                radial-gradient(0.7px 0.7px at 95% 65%, white, transparent),
+                radial-gradient(1.4px 1.4px at 97% 8%, white, transparent),
+                radial-gradient(1px 1px at 99% 58%, white, transparent);
+            background-size: 200% 200%;
+            animation: moveStars 60s linear infinite;
+            opacity: 0.8;
+            z-index: 0;
+        }
+
+        .stars::after {
+            content: "";
+            background-image:
+                radial-gradient(0.8px 0.8px at 3% 18%, white, transparent),
+                radial-gradient(1.1px 1.1px at 5% 42%, white, transparent),
+                radial-gradient(0.9px 0.9px at 7% 68%, white, transparent),
+                radial-gradient(1.3px 1.3px at 9% 25%, white, transparent),
+                radial-gradient(1.2px 1.2px at 11% 78%, white, transparent),
+                radial-gradient(0.7px 0.7px at 13% 35%, white, transparent),
+                radial-gradient(1.4px 1.4px at 15% 55%, white, transparent),
+                radial-gradient(1px 1px at 17% 8%, white, transparent),
+                radial-gradient(1.1px 1.1px at 19% 72%, white, transparent),
+                radial-gradient(0.9px 0.9px at 21% 38%, white, transparent),
+                radial-gradient(1.5px 1.5px at 23% 12%, white, transparent),
+                radial-gradient(0.8px 0.8px at 25% 65%, white, transparent),
+                radial-gradient(1.2px 1.2px at 27% 45%, white, transparent),
+                radial-gradient(1.3px 1.3px at 29% 18%, white, transparent),
+                radial-gradient(0.7px 0.7px at 31% 82%, white, transparent),
+                radial-gradient(1.4px 1.4px at 33% 28%, white, transparent),
+                radial-gradient(1px 1px at 35% 58%, white, transparent),
+                radial-gradient(1.1px 1.1px at 37% 5%, white, transparent),
+                radial-gradient(0.9px 0.9px at 39% 75%, white, transparent),
+                radial-gradient(1.2px 1.2px at 41% 32%, white, transparent),
+                radial-gradient(1.5px 1.5px at 43% 62%, white, transparent),
+                radial-gradient(0.8px 0.8px at 45% 15%, white, transparent),
+                radial-gradient(1.3px 1.3px at 47% 48%, white, transparent),
+                radial-gradient(1px 1px at 49% 68%, white, transparent),
+                radial-gradient(1.1px 1.1px at 51% 22%, white, transparent),
+                radial-gradient(0.7px 0.7px at 53% 85%, white, transparent),
+                radial-gradient(1.4px 1.4px at 55% 38%, white, transparent),
+                radial-gradient(1.2px 1.2px at 57% 10%, white, transparent),
+                radial-gradient(0.9px 0.9px at 59% 72%, white, transparent),
+                radial-gradient(1.5px 1.5px at 61% 42%, white, transparent),
+                radial-gradient(1px 1px at 63% 15%, white, transparent),
+                radial-gradient(1.1px 1.1px at 65% 65%, white, transparent),
+                radial-gradient(0.8px 0.8px at 67% 28%, white, transparent),
+                radial-gradient(1.3px 1.3px at 69% 55%, white, transparent),
+                radial-gradient(1.2px 1.2px at 71% 8%, white, transparent),
+                radial-gradient(0.7px 0.7px at 73% 78%, white, transparent),
+                radial-gradient(1.4px 1.4px at 75% 35%, white, transparent),
+                radial-gradient(1px 1px at 77% 62%, white, transparent),
+                radial-gradient(1.1px 1.1px at 79% 18%, white, transparent),
+                radial-gradient(0.9px 0.9px at 81% 48%, white, transparent),
+                radial-gradient(1.5px 1.5px at 83% 72%, white, transparent),
+                radial-gradient(0.8px 0.8px at 85% 12%, white, transparent),
+                radial-gradient(1.2px 1.2px at 87% 58%, white, transparent),
+                radial-gradient(1.3px 1.3px at 89% 35%, white, transparent),
+                radial-gradient(1px 1px at 91% 8%, white, transparent),
+                radial-gradient(0.7px 0.7px at 93% 68%, white, transparent),
+                radial-gradient(1.4px 1.4px at 95% 42%, white, transparent),
+                radial-gradient(1.1px 1.1px at 97% 22%, white, transparent),
+                radial-gradient(0.9px 0.9px at 2% 38%, white, transparent),
+                radial-gradient(1.2px 1.2px at 4% 55%, white, transparent);
+            background-size: 300% 300%;
+            animation-duration: 120s;
+            opacity: 0.5;
+        }
+
+        @keyframes moveStars {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-1000px);
+            }
+        }
+
+        /* ================= CONTENEDOR ================= */
+        .container {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* ================= TARJETA CERRADA ================= */
+        .closed-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            padding: 50px 40px;
+            border-radius: 24px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.7);
+            transition: transform 0.4s ease;
+        }
+
+        .closed-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .closed-card h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #ff6b81;
+        }
+
+        .closed-card p {
+            font-size: 16px;
+            color: #eaeaea;
+        }
+
+        /* ================= CARTA ABIERTA ================= */
+        .letter {
+            display: none;
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(18px);
+            border-radius: 26px;
+            padding: 70px;
+            box-shadow: 0 50px 90px rgba(0,0,0,0.7);
+            animation: reveal 1.2s ease forwards;
+        }
+
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .tag {
+            font-size: 12px;
+            letter-spacing: 5px;
+            color: #ff6b81;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 56px;
+            margin-bottom: 35px;
+        }
+
+        p {
+            font-size: 17.5px;
+            line-height: 2;
+            margin-bottom: 26px;
+            color: #ededed;
+        }
+
+        .accent {
+            color: #ff6b81;
+            font-weight: 500;
+        }
+
+        .divider {
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #ff6b81, transparent);
+            margin: 45px auto;
+        }
+
+        .signature {
+            margin-top: 55px;
+            text-align: right;
+        }
+
+        .signature span {
+            font-family: 'Dancing Script', cursive;
+            font-size: 40px;
+            color: #ff6b81;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 768px) {
+            .letter {
+                padding: 45px 30px;
+            }
+
+            h1 {
+                font-size: 44px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.9;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .letter {
+                padding: 35px 22px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .closed-card h2 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fondo animado -->
+    <div class="stars"></div>
+
+    <div class="container">
+
+        <!-- Carta cerrada -->
+        <div class="closed-card" id="openCard">
+            <h2>Toca aquí</h2>
+            <p>Tengo algo que decirte 💖</p>
+        </div>
+ <!-- Carta abierta -->
+        <div class="letter" id="letter">
+            <div class="tag">San Valentín</div>
+
+            <h1>Para ti, mi amor</h1>
+
+            <p>
+                Amor, no tengo ni por dónde empezar porque hay tantas cosas que quiero decirte
+                y no sé si las palabras me van a alcanzar para expresar todo lo que siento.
+                Pero aquí voy, intentándolo con el corazón en la mano.
+            </p>
+
+            <p>
+                Yo <span class="accent">te amooooo muchoooo</span>, en serio, más de lo que probablemente puedo expresar.
+                Si fuera por mí, te daría todo el mundo entero.
+                Te daría la luna, las estrellas, el cielo completo si pudiera.
+            </p>
+
+            <p>
+                Quiero pedirte perdón por ser tan seco a veces.
+                Sé que no soy el mejor expresando lo que siento y que hay momentos
+                en los que parece que no me importa, pero nada está más lejos de la realidad.
+                Perdóname por no ser siempre el novio o el hombre que tú mereces.
+            </p>
+
+            <p>
+                Desde que llegaste a mi vida todo cambió.
+                Tú le diste color a mis días grises y luz a mis noches oscuras.
+                Cuando sonríes siento que el mundo se detiene
+                y solo existimos tú y yo.
+            </p>
+
+            <div class="divider"></div>
+
+            <p>
+                Tus ojos son mi lugar favorito para perderme,
+                y tu risa es la melodía más hermosa que he escuchado jamás.
+                Eres mi persona, mi paz en medio del caos,
+                mi refugio cuando todo se pone difícil.
+            </p>
+
+            <p>
+                Contigo aprendí que el amor no es perfecto,
+                pero es real, y es lo más bonito que me ha pasado.
+                Me inspiras a ser mejor, a soñar más grande,
+                a creer en nosotros.
+            </p>
+
+            <p>
+                Gracias por quedarte, por tenerme paciencia,
+                por amarme incluso cuando soy un desastre.
+                Prometo intentar cada día ser un poco más
+                del hombre que mereces.
+            </p>
+
+            <p>
+                Feliz San Valentín, mi amor.
+                Eres y serás siempre mi persona favorita.
+            </p>
+
+            <div class="signature">
+                <p>Con todo mi amor,</p>
+                <span>John ❤</span>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        const openCard = document.getElementById("openCard");
+        const letter = document.getElementById("letter");
+
+        openCard.addEventListener("click", () => {
+            openCard.style.display = "none";
+            letter.style.display = "block";
+        });
+    </script>
+
+</body>
+</html>
